@@ -1,0 +1,23 @@
+{
+  "name": "cake-mail",
+  "version": "1.0.0",
+  "description": "Cake mail web app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikecheck12/cake-mail.git"
+  },
+  "author": "Mike Oliver <jmichaeloliver12@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikecheck12/cake-mail/issues"
+  },
+  "homepage": "https://github.com/mikecheck12/cake-mail#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
