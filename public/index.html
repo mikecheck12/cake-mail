@@ -2,20 +2,24 @@
 <html ng-app= 'cakeMail'>
   <head>
     <title>Cake Mail</title>
-    <script src="/node_modules/angular/angular.js"></script>
-    <
   </head>
   <body>
     <h1>Cake Mail</h1>
 
   <div class = 'navigate'>
     <ul>
-      <li><a href = '#orders'> Orders </a></li>
-      <li><a href = '#taster'> Create Taster </a></li>
+      <li><a href = '/#orders'> Orders </a></li>
+      <li><a href = '/#taster'> Create Taster </a></li>
     </ul>
   </div>
 
-  <div ng-view></div>
+    <div ng-view></div>
 
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src='/node_modules/angular-route/angular-route.js'></script>
+
+    <script src='/orders/orders.js'></script>
+    <script src='/tasters/tasters.js'></script>
+    <script src='/cakemail.js'></script>
   </body>
 </html>

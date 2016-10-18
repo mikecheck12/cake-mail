@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mikecheck12/cake-mail#readme",
   "dependencies": {
+    "angular-route": "^1.5.8",
     "express": "^4.14.0"
   }
 }
