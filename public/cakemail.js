@@ -5,7 +5,7 @@ app.config(function($routeProvider) { //may need to add $httpProvider for auth
   $routeProvider
   .when('/orders', {
     templateUrl : '/orders/orders.html',
-    controller : 'OrderController'
+    controller: 'OrderController'
   })
   .when('/tasters', {
     templateUrl : '/tasters/tasters.html',

@@ -19,7 +19,8 @@
   "homepage": "https://github.com/mikecheck12/cake-mail#readme",
   "dependencies": {
     "angular-route": "^1.5.8",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "mongoose": "^4.6.4"
   },
   "engines": {
     "node": "6.6.0"

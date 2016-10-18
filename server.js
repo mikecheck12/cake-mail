@@ -1,5 +1,10 @@
 var express = require('express');
+var mongoose = require('mongoose');
 var path = require('path');
+
+var dbURI = process.env.MONGODB_URI || 'mongosdb://localhost/cakemail';
+
+mongoose.connect(dbURI);
 
 var app = express();
 
