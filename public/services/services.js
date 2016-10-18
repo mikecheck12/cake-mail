@@ -16,7 +16,7 @@ angular.module('cakeMail.services', [])
     return $http({
       method: 'POST',
       url: '/api/orders',
-      data: order
+      data: JSON.stringify(order);
     })
     .then(function(resp) {
       return resp.data;

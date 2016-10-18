@@ -1,7 +1,7 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var path = require('path');
-var orders = require('./Models/Orders/ordersModel');
+var Order = require('./Models/Orders/ordersModel');
 var bodyParser = require('body-parser');
 
 var dbURI = process.env.MONGODB_URI || 'mongodb://localhost/cakemail';

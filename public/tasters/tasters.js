@@ -11,12 +11,7 @@ var orders = angular.module('cakeMail.tasters', [])
   $scope.order = {};
 
 //refactor to be properties of order?? i.e. $scope.order.name
-  // $scope.name = '';
-  // $scope.addLine1 = '';
-  // $scope.addLine2 = '';
-  // $scope.city = '';
-  // $scope.state = '';
-  // $scope.zip = '';
+
 
   $scope.addOrder = function() {
     Orders.addOrder($scope.order)
