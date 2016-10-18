@@ -1,2 +1,13 @@
 <div ng-controller='OrdersController'>
   <div class = 'orders'>
+  <div class = 'order' ng-repeat = "order in data.order | orderBy: 'created_at'">
+    <div class = 'name'>{{order.name}}</div>
+    <div class = 'address'>{{order.addressOne}}</div>
+    <div class = 'address'>{{order.addressTwo}}</div>
+    <div class = 'address'>{{order.city}}</div>
+    <div class = 'address'>{{order.state}}</div>
+    <div class = 'address'>{{order.zip}}</div>
+    <div>Roger</div>
+  </div>
+  </div>
+</div>
