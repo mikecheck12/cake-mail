@@ -1,11 +1,11 @@
 //main js file
-app = angular.module('cakeMail', ['ngRoute']);
+angular.module('cakeMail', ['ngRoute', 'cakeMail.orders', 'cakeMail.services', 'cakeMail.tasters'])
 
-app.config(function($routeProvider) { //may need to add $httpProvider for auth
+.config(function($routeProvider) { //may need to add $httpProvider for auth
   $routeProvider
   .when('/orders', {
     templateUrl : '/orders/orders.html',
-    controller: 'OrderController'
+    controller: 'OrdersController'
   })
   .when('/tasters', {
     templateUrl : '/tasters/tasters.html',
