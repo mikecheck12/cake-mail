@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var path = require('path');
 var bodyParser = require('body-parser');
 
-require('./models/orders/ordersModel');
+require('./models/Orders/ordersModel');
 var Order = mongoose.model('Order');
 
 
@@ -25,18 +25,12 @@ app.listen(app.get('port'), function() {
 
 //handle get & post requests
 app.get('/api/orders', function(req, res){
-  console.log('starting get request');
   Order.find(function(err, orders) {
     res.json(orders);
   })
-  //Order.find({}, )
 })
 
 app.post('/api/orders', function(req, res) {
-  console.log('starting post request', req.body);
-
-  //var newOrder = req.body;
-
   var order = new Order(req.body);
   order.save(function(err, order) {
     res.send(order);

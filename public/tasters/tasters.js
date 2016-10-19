@@ -3,11 +3,7 @@
 angular.module('cakeMail.tasters', [])
 
 .controller('TastersController', function ($scope, Orders, $http) {
-  // $http({
-  //     method: 'POST',
-  //     url: '/api/orders',
-  //     data: JSON.stringify({Hello: "Hi"})
-  //   })
+
   $scope.order = {};
 
   $scope.addOrder = function() {
