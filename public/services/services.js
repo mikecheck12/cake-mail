@@ -8,7 +8,6 @@ angular.module('cakeMail.services', [])
       url: '/api/orders'
     })
     .then(function(resp) {
-      console.log('get successful', resp);
       return resp.data;
     });
   };
@@ -21,7 +20,6 @@ angular.module('cakeMail.services', [])
       data: JSON.stringify(order)
     })
     .then(function(resp) {
-      console.log('post succesful', resp);
       return resp.data;
     });
   };
