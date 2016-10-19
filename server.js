@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var path = require('path');
 var bodyParser = require('body-parser');
 
-require('./models/Orders/ordersModel.js');
+//require('./models/Orders/ordersModel.js');
 var Order = mongoose.model('Order');
 
 
