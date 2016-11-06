@@ -1,0 +1,23 @@
+.header{
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 400%;
+  color: #a6a6ed;
+}
+.navbar-nav{
+  text-align: center;
+  background-color: #ededa6;
+}
+.menuItem{
+  text-align: center;
+  display: inline-block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 125%;
+  text-decoration: none;
+}
+.menuOption{
+  display: block;
+  width: 100px;
+  padding: 8px 16px;
+  text-decoration: none:;
+}
