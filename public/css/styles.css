@@ -28,7 +28,11 @@
   border-radius: 5px;
   max-width: 45%;
   background-color: pink;
-;
+}
+.orderheader {
+  text-align: center;
+  max-width: 45%;
+  font-size: 20px;
 }
 .checkbox {
   float: right;
@@ -37,4 +41,7 @@
 .name {
   text-decoration: underline;
   font-size: 19px;
+}
+#font {
+  font-family: 'Open Sans Condensed', sans-serif;
 }

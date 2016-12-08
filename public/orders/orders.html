@@ -1,5 +1,6 @@
 <div ng-controller='OrdersController'>
   <div class = 'orders'>
+  <div class = 'orderheader' id = 'font'> PENDING ORDERS </div>
   <div class = 'order' ng-repeat = "order in data.orders | orderBy: 'created_at'">
     <div style="float: right">Order Complete</div>
     <div class = 'name'>{{order.name}}
