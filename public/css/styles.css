@@ -26,8 +26,15 @@
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
+  max-width: 45%;
+  background-color: pink;
+;
 }
 .checkbox {
   float: right;
   margin-right: 5px;
+}
+.name {
+  text-decoration: underline;
+  font-size: 19px;
 }

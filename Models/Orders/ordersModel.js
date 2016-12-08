@@ -6,7 +6,8 @@
   addressTwo: String,
   city: String,
   state: String,
-  zip: String
+  zip: String,
+  date: String
  });
 
  mongoose.model('Order', OrderSchema);

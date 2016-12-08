@@ -2,14 +2,15 @@
   <div class = 'orders'>
   <div class = 'order' ng-repeat = "order in data.orders | orderBy: 'created_at'">
     <div style="float: right">Order Complete</div>
-    <div class = 'name' style = "text-decoration: underline">{{order.name}}
+    <div class = 'name'>{{order.name}}
         <input type = 'checkbox' class = 'checkbox' />
     </div>
     <div class = 'address'>{{order.addressOne}}</div>
     <div class = 'address'>{{order.addressTwo}}</div>
     <div class = 'address'>{{order.city}}</div>
     <div class = 'address'>{{order.state}}</div>
-    <div class = 'address'>{{order.zip}}</div>
+    <div class = 'address' style = "display: inline-block">{{order.zip}}</div>
+    <div style = "display: inline-block; float: right">Order Date: {{order.date}}</div>
   </div>
   </div>
 </div>

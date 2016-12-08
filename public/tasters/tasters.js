@@ -8,8 +8,9 @@ angular.module('cakeMail.tasters', [])
 
   $scope.addOrder = function() {
     console.log('controller function');
+    var d = new Date();
+    $scope.order.date = d.toDateString();
     Orders.addOrder($scope.order)
     //could use .then location path to reroute to thank you, order has been placed
   };
-
 });
