@@ -1,7 +1,10 @@
 <div ng-controller='OrdersController'>
   <div class = 'orders'>
   <div class = 'order' ng-repeat = "order in data.orders | orderBy: 'created_at'">
-    <div class = 'name'>{{order.name}}</div>
+    <div style="float: right">Order Complete</div>
+    <div class = 'name' style = "text-decoration: underline">{{order.name}}
+        <input type = 'checkbox' class = 'checkbox' />
+    </div>
     <div class = 'address'>{{order.addressOne}}</div>
     <div class = 'address'>{{order.addressTwo}}</div>
     <div class = 'address'>{{order.city}}</div>

@@ -3,6 +3,9 @@ angular.module('cakeMail', ['ngRoute', 'cakeMail.orders', 'cakeMail.services', '
 
 .config(function($routeProvider) { //may need to add $httpProvider for auth
   $routeProvider
+  .when('/home', {
+    templateUrl : './home.html'
+  })
   .when('/orders', {
     templateUrl : '/orders/orders.html',
     controller: 'OrdersController'
